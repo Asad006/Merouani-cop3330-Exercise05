@@ -1,7 +1,8 @@
-package org.example;
+/**
+ *  UCF COP3330 Summer 2021 Assignment 1 Solutions
+ *  Copyright 2021 first_name last_name
 
-import java.util.Scanner;
-
+**/
 /*
 You’ll often write programs that deal with numbers. And depending on the programming language you use, you’ll have
 to convert the inputs you get to numerical data types.
@@ -29,6 +30,11 @@ Break the program into functions that do the computations.
 Implement this program as a GUI program that automatically updates the values when any value changes.
 
  */
+package org.example;
+
+import java.util.Scanner;
+
+
 public class App {
     public static void main(String[] args) {
         String[] stringInput = {"0", "0"};
@@ -43,28 +49,28 @@ public class App {
         input1 = app.convertStringToInteger(stringInput[0]);
         input2 = app.convertStringToInteger(stringInput[1]);
 
-        app.getAddition(input1,input2);
-        app.getSubtraction(input1,input2);
-        app.multiplication(input1,input2);
-        app.getDivision(input1,input2);
+        app.getAddition(input1, input2);
+        app.getSubtraction(input1, input2);
+        app.multiplication(input1, input2);
+        app.getDivision(input1, input2);
 
     }
 
     private void getAddition(int num1, int num2) {
-        System.out.printf("%d + %d = %d\n",num1,num2,num1 + num2);
+        System.out.printf("%d + %d = %d\n", num1, num2, num1 + num2);
 
     }
 
     private void getDivision(int num1, int num2) {
-        System.out.printf("%d / %d = %d\n",num1,num2,num1 / num2);
+        System.out.printf("%d / %d = %d\n", num1, num2, num1 / num2);
     }
 
     private void getSubtraction(int num1, int num2) {
-        System.out.printf("%d - %d = %d\n",num1,num2,num1 - num2);
+        System.out.printf("%d - %d = %d\n", num1, num2, num1 - num2);
     }
 
     private void multiplication(int num1, int num2) {
-        System.out.printf("%d * %d = %d\n",num1,num2,num1 * num2);
+        System.out.printf("%d * %d = %d\n", num1, num2, num1 * num2);
     }
 
     private int convertStringToInteger(String string) {
